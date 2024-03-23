@@ -78,12 +78,12 @@ class Home extends Component {
     return (
       <MainContainer>
         <ScoreCard>
-          <Heading color='#ffffff'>Rock Paper Scissors</Heading>
+          <Heading color="#ffffff">Rock Paper Scissors</Heading>
           <Score>
-            <ParaText color='#223a5f' font='Bree Serif'>
+            <ParaText color="#223a5f" font="Bree Serif">
               Score
             </ParaText>
-            <ParaText color='#223a5f' font='Roboto'>
+            <ParaText color="#223a5f" font="Roboto">
               {score}
             </ParaText>
           </Score>
@@ -111,16 +111,16 @@ class Home extends Component {
           )}
         </div>
         <div>
-          <Popup modal trigger={<button>Rules</button>} position='right center'>
+          <Popup modal trigger={<button>Rules</button>} position="right center">
             {close => (
               <>
-                <button type='button' onClick={() => close()}>
-                  <RiCloseLine aria-label='close' />
+                <button type="button" onClick={() => close()}>
+                  <RiCloseLine aria-label="close" />
                 </button>
                 <div>
                   <img
-                    src='https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/rules-image.png'
-                    alt='rules'
+                    src="https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/rules-image.png"
+                    alt="rules"
                   />
                 </div>
               </>
